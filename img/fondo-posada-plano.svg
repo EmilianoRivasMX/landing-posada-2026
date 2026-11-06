@@ -1,0 +1,669 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Night sky gradient -->
+    <linearGradient id="cielo" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0730;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1a1050;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1a6e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Warm lantern glow -->
+    <radialGradient id="luz-farol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffdd88;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ff8800;stop-opacity:0" />
+    </radialGradient>
+    <!-- Ponche pot shading -->
+    <radialGradient id="olla-shade" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#c97a2a" />
+      <stop offset="100%" style="stop-color:#6b3a0f" />
+    </radialGradient>
+    <!-- Candle flame -->
+    <radialGradient id="flama" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" style="stop-color:#fffde7" />
+      <stop offset="40%" style="stop-color:#ffb300" />
+      <stop offset="100%" style="stop-color:#e65100;stop-opacity:0" />
+    </radialGradient>
+    <!-- Star filter for paper picado glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-star">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- === BACKGROUND SKY === -->
+  <rect width="1920" height="1080" fill="url(#cielo)"/>
+
+  <!-- === STARS === -->
+  <g opacity="0.9" filter="url(#glow-star)">
+    <!-- scattered small stars -->
+    <circle cx="120" cy="60" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="250" cy="30" r="1" fill="white" opacity="0.7"/>
+    <circle cx="380" cy="80" r="2" fill="white" opacity="0.9"/>
+    <circle cx="510" cy="20" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="650" cy="55" r="1" fill="white" opacity="0.8"/>
+    <circle cx="780" cy="35" r="1.5" fill="white" opacity="0.7"/>
+    <circle cx="900" cy="15" r="2" fill="white" opacity="0.9"/>
+    <circle cx="1050" cy="70" r="1" fill="white" opacity="0.6"/>
+    <circle cx="1180" cy="40" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="1320" cy="25" r="1" fill="white" opacity="0.7"/>
+    <circle cx="1450" cy="65" r="2" fill="white" opacity="0.9"/>
+    <circle cx="1580" cy="30" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="1700" cy="50" r="1" fill="white" opacity="0.8"/>
+    <circle cx="1820" cy="20" r="2" fill="white" opacity="0.7"/>
+    <circle cx="180" cy="130" r="1" fill="white" opacity="0.5"/>
+    <circle cx="420" cy="150" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="700" cy="120" r="1" fill="white" opacity="0.7"/>
+    <circle cx="980" cy="140" r="1.5" fill="white" opacity="0.5"/>
+    <circle cx="1260" cy="110" r="1" fill="white" opacity="0.6"/>
+    <circle cx="1540" cy="145" r="2" fill="white" opacity="0.7"/>
+    <circle cx="1800" cy="100" r="1" fill="white" opacity="0.5"/>
+    <!-- Bright stars -->
+    <circle cx="60" cy="45" r="2.5" fill="white" opacity="1"/>
+    <circle cx="340" cy="90" r="2.5" fill="#fffde7" opacity="1"/>
+    <circle cx="860" cy="50" r="2.5" fill="white" opacity="1"/>
+    <circle cx="1400" cy="80" r="2.5" fill="#fffde7" opacity="1"/>
+    <circle cx="1750" cy="40" r="2.5" fill="white" opacity="1"/>
+  </g>
+
+  <!-- === PAPEL PICADO STRING LINES === -->
+  <!-- String across top -->
+  <path d="M0,120 Q240,105 480,120 Q720,135 960,120 Q1200,105 1440,120 Q1680,135 1920,120" stroke="#8B6914" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <path d="M0,230 Q240,215 480,230 Q720,245 960,230 Q1200,215 1440,230 Q1680,245 1920,230" stroke="#8B6914" stroke-width="2.5" fill="none" opacity="0.7"/>
+
+  <!-- === PAPEL PICADO BANNERS (top string) === -->
+  <!-- Triangle pennants along first string -->
+  <g opacity="0.95">
+    <!-- Red -->
+    <polygon points="80,120 120,120 100,165" fill="#e53935"/>
+    <polygon points="80,120 120,120 100,165" fill="none" stroke="#b71c1c" stroke-width="1"/>
+    <!-- cutout dots -->
+    <circle cx="100" cy="140" r="3" fill="#e53935" opacity="0"/>
+    <!-- Green -->
+    <polygon points="160,120 200,120 180,165" fill="#43a047"/>
+    <!-- Yellow -->
+    <polygon points="240,120 280,120 260,165" fill="#fdd835"/>
+    <!-- Pink -->
+    <polygon points="320,120 360,120 340,165" fill="#e91e96"/>
+    <!-- Purple -->
+    <polygon points="400,120 440,120 420,165" fill="#8e24aa"/>
+    <!-- Orange -->
+    <polygon points="480,120 520,120 500,165" fill="#ff6d00"/>
+    <!-- Cyan -->
+    <polygon points="560,120 600,120 580,165" fill="#00bcd4"/>
+    <!-- Red -->
+    <polygon points="640,120 680,120 660,165" fill="#e53935"/>
+    <!-- Green -->
+    <polygon points="720,120 760,120 740,165" fill="#43a047"/>
+    <!-- Yellow -->
+    <polygon points="800,120 840,120 820,165" fill="#fdd835"/>
+    <!-- Pink -->
+    <polygon points="880,120 920,120 900,165" fill="#e91e96"/>
+    <!-- Purple -->
+    <polygon points="960,120 1000,120 980,165" fill="#8e24aa"/>
+    <!-- Orange -->
+    <polygon points="1040,120 1080,120 1060,165" fill="#ff6d00"/>
+    <!-- Red -->
+    <polygon points="1120,120 1160,120 1140,165" fill="#e53935"/>
+    <!-- Green -->
+    <polygon points="1200,120 1240,120 1220,165" fill="#43a047"/>
+    <!-- Yellow -->
+    <polygon points="1280,120 1320,120 1300,165" fill="#fdd835"/>
+    <!-- Pink -->
+    <polygon points="1360,120 1400,120 1380,165" fill="#e91e96"/>
+    <!-- Purple -->
+    <polygon points="1440,120 1480,120 1460,165" fill="#8e24aa"/>
+    <!-- Orange -->
+    <polygon points="1520,120 1560,120 1540,165" fill="#ff6d00"/>
+    <!-- Cyan -->
+    <polygon points="1600,120 1640,120 1620,165" fill="#00bcd4"/>
+    <!-- Red -->
+    <polygon points="1680,120 1720,120 1700,165" fill="#e53935"/>
+    <!-- Green -->
+    <polygon points="1760,120 1800,120 1780,165" fill="#43a047"/>
+    <!-- Yellow -->
+    <polygon points="1840,120 1880,120 1860,165" fill="#fdd835"/>
+  </g>
+
+  <!-- === PAPEL PICADO BANNERS (second string) === -->
+  <g opacity="0.8">
+    <polygon points="40,230 80,230 60,275" fill="#e91e96"/>
+    <polygon points="120,230 160,230 140,275" fill="#fdd835"/>
+    <polygon points="200,230 240,230 220,275" fill="#8e24aa"/>
+    <polygon points="280,230 320,230 300,275" fill="#ff6d00"/>
+    <polygon points="360,230 400,230 380,275" fill="#43a047"/>
+    <polygon points="440,230 480,230 460,275" fill="#e53935"/>
+    <polygon points="520,230 560,230 540,275" fill="#00bcd4"/>
+    <polygon points="600,230 640,230 620,275" fill="#fdd835"/>
+    <polygon points="680,230 720,230 700,275" fill="#e91e96"/>
+    <polygon points="760,230 800,230 780,275" fill="#8e24aa"/>
+    <polygon points="840,230 880,230 860,275" fill="#ff6d00"/>
+    <polygon points="920,230 960,230 940,275" fill="#43a047"/>
+    <polygon points="1000,230 1040,230 1020,275" fill="#e53935"/>
+    <polygon points="1080,230 1120,230 1100,275" fill="#00bcd4"/>
+    <polygon points="1160,230 1200,230 1180,275" fill="#fdd835"/>
+    <polygon points="1240,230 1280,230 1260,275" fill="#e91e96"/>
+    <polygon points="1320,230 1360,230 1340,275" fill="#8e24aa"/>
+    <polygon points="1400,230 1440,230 1420,275" fill="#ff6d00"/>
+    <polygon points="1480,230 1520,230 1500,275" fill="#43a047"/>
+    <polygon points="1560,230 1600,230 1580,275" fill="#e53935"/>
+    <polygon points="1640,230 1680,230 1660,275" fill="#00bcd4"/>
+    <polygon points="1720,230 1760,230 1740,275" fill="#fdd835"/>
+    <polygon points="1800,230 1840,230 1820,275" fill="#e91e96"/>
+  </g>
+
+  <!-- === LANTERN GLOW AMBIENT LIGHT === -->
+  <ellipse cx="400" cy="600" rx="350" ry="300" fill="url(#luz-farol)" opacity="0.3"/>
+  <ellipse cx="1500" cy="550" rx="300" ry="280" fill="url(#luz-farol)" opacity="0.25"/>
+  <ellipse cx="960" cy="700" rx="400" ry="250" fill="url(#luz-farol)" opacity="0.2"/>
+
+  <!-- ============================================================ -->
+  <!-- === PIÑATAS HANGING LEFT === -->
+  <!-- ============================================================ -->
+  <!-- Rope from string for LEFT piñata burro -->
+  <line x1="150" y1="230" x2="145" y2="355" stroke="#8B6914" stroke-width="3"/>
+  <!-- PIÑATA BURRO (donkey-shaped piñata) - LEFT, large -->
+  <!-- This is a traditional clay-pot burro piñata - completely different from the star piñata on the center card -->
+  <g transform="translate(145, 390)">
+    <!-- Tissue paper fringe strips hanging below body (colorful layers) -->
+    <!-- Layer 1 - red -->
+    <rect x="-52" y="38" width="104" height="18" rx="2" fill="#e53935" opacity="0.9"/>
+    <!-- Layer 2 - yellow -->
+    <rect x="-48" y="52" width="96" height="16" rx="2" fill="#fdd835" opacity="0.9"/>
+    <!-- Layer 3 - green -->
+    <rect x="-44" y="65" width="88" height="15" rx="2" fill="#43a047" opacity="0.9"/>
+    <!-- Layer 4 - pink -->
+    <rect x="-40" y="77" width="80" height="14" rx="2" fill="#e91e96" opacity="0.9"/>
+    <!-- Layer 5 - cyan -->
+    <rect x="-36" y="88" width="72" height="13" rx="2" fill="#00bcd4" opacity="0.9"/>
+    <!-- Layer 6 - orange -->
+    <rect x="-32" y="98" width="64" height="12" rx="2" fill="#ff6d00" opacity="0.9"/>
+    <!-- Fringe cuts on each layer -->
+    <line x1="-40" y1="38" x2="-40" y2="58" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+    <line x1="-20" y1="38" x2="-20" y2="58" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="38" x2="0" y2="58" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+    <line x1="20" y1="38" x2="20" y2="58" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+    <line x1="40" y1="38" x2="40" y2="58" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+    <line x1="-36" y1="52" x2="-36" y2="70" stroke="#f9a825" stroke-width="2" opacity="0.6"/>
+    <line x1="-16" y1="52" x2="-16" y2="70" stroke="#f9a825" stroke-width="2" opacity="0.6"/>
+    <line x1="4" y1="52" x2="4" y2="70" stroke="#f9a825" stroke-width="2" opacity="0.6"/>
+    <line x1="24" y1="52" x2="24" y2="70" stroke="#f9a825" stroke-width="2" opacity="0.6"/>
+    <line x1="44" y1="52" x2="44" y2="70" stroke="#f9a825" stroke-width="2" opacity="0.6"/>
+    <!-- BURRO BODY (barrel/round body) -->
+    <ellipse cx="0" cy="0" rx="52" ry="38" fill="#8e24aa"/>
+    <ellipse cx="0" cy="0" rx="52" ry="38" fill="none" stroke="#6a1b9a" stroke-width="3"/>
+    <!-- Body tissue paper texture stripes -->
+    <ellipse cx="0" cy="0" rx="40" ry="26" fill="#9c27b0" opacity="0.5"/>
+    <line x1="-50" y1="-10" x2="50" y2="-10" stroke="#7b1fa2" stroke-width="2" opacity="0.4"/>
+    <line x1="-50" y1="8" x2="50" y2="8" stroke="#7b1fa2" stroke-width="2" opacity="0.4"/>
+    <!-- BURRO NECK -->
+    <rect x="30" y="-45" width="22" height="35" rx="8" fill="#ff6d00"/>
+    <rect x="30" y="-45" width="22" height="35" rx="8" fill="none" stroke="#e65100" stroke-width="2"/>
+    <!-- BURRO HEAD -->
+    <ellipse cx="51" cy="-58" rx="22" ry="18" fill="#fdd835"/>
+    <ellipse cx="51" cy="-58" rx="22" ry="18" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+    <!-- Snout -->
+    <ellipse cx="68" cy="-52" rx="12" ry="9" fill="#ffcc02"/>
+    <!-- Nostrils -->
+    <circle cx="65" cy="-51" r="2.5" fill="#e65100" opacity="0.6"/>
+    <circle cx="72" cy="-51" r="2.5" fill="#e65100" opacity="0.6"/>
+    <!-- Eye -->
+    <circle cx="48" cy="-62" r="4" fill="#1a0d00"/>
+    <circle cx="49.5" cy="-63" r="1.5" fill="white"/>
+    <!-- EARS (long donkey ears) -->
+    <ellipse cx="38" cy="-78" rx="6" ry="16" fill="#fdd835" transform="rotate(-15,38,-78)"/>
+    <ellipse cx="38" cy="-78" rx="3" ry="10" fill="#e91e96" transform="rotate(-15,38,-78)"/>
+    <ellipse cx="56" cy="-76" rx="5" ry="14" fill="#fdd835" transform="rotate(10,56,-76)"/>
+    <ellipse cx="56" cy="-76" rx="2.5" ry="8" fill="#e91e96" transform="rotate(10,56,-76)"/>
+    <!-- LEGS (4 short legs) -->
+    <rect x="-38" y="30" width="14" height="30" rx="5" fill="#ff6d00"/>
+    <rect x="-18" y="30" width="14" height="30" rx="5" fill="#fdd835"/>
+    <rect x="6" y="30" width="14" height="30" rx="5" fill="#43a047"/>
+    <rect x="26" y="30" width="14" height="30" rx="5" fill="#e91e96"/>
+    <!-- TAIL -->
+    <path d="M-50,10 Q-72,0 -68,20 Q-64,40 -58,30" stroke="#00bcd4" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- tail tuft -->
+    <circle cx="-58" cy="30" r="8" fill="#00bcd4"/>
+    <line x1="-58" y1="30" x2="-62" y2="45" stroke="#00bcd4" stroke-width="4"/>
+    <line x1="-58" y1="30" x2="-52" y2="46" stroke="#00bcd4" stroke-width="4"/>
+    <line x1="-58" y1="30" x2="-58" y2="47" stroke="#00bcd4" stroke-width="4"/>
+    <!-- Hanging string at top -->
+    <line x1="0" y1="-38" x2="0" y2="-60" stroke="#8B6914" stroke-width="3"/>
+  </g>
+
+  <!-- Rope from second string for RIGHT piñata burro (smaller, different color) -->
+  <line x1="1750" y1="230" x2="1760" y2="360" stroke="#8B6914" stroke-width="3"/>
+  <!-- PIÑATA BURRO RIGHT - same style, different color palette -->
+  <g transform="translate(1760, 395) scale(0.85)">
+    <!-- Tissue paper fringe layers -->
+    <rect x="-52" y="38" width="104" height="18" rx="2" fill="#43a047" opacity="0.9"/>
+    <rect x="-48" y="52" width="96" height="16" rx="2" fill="#fdd835" opacity="0.9"/>
+    <rect x="-44" y="65" width="88" height="15" rx="2" fill="#e53935" opacity="0.9"/>
+    <rect x="-40" y="77" width="80" height="14" rx="2" fill="#00bcd4" opacity="0.9"/>
+    <rect x="-36" y="88" width="72" height="13" rx="2" fill="#8e24aa" opacity="0.9"/>
+    <!-- Fringe cuts -->
+    <line x1="-40" y1="38" x2="-40" y2="58" stroke="#2e7d32" stroke-width="2" opacity="0.6"/>
+    <line x1="-20" y1="38" x2="-20" y2="58" stroke="#2e7d32" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="38" x2="0" y2="58" stroke="#2e7d32" stroke-width="2" opacity="0.6"/>
+    <line x1="20" y1="38" x2="20" y2="58" stroke="#2e7d32" stroke-width="2" opacity="0.6"/>
+    <line x1="40" y1="38" x2="40" y2="58" stroke="#2e7d32" stroke-width="2" opacity="0.6"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="52" ry="38" fill="#e53935"/>
+    <ellipse cx="0" cy="0" rx="52" ry="38" fill="none" stroke="#b71c1c" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="40" ry="26" fill="#ef5350" opacity="0.5"/>
+    <!-- Neck -->
+    <rect x="30" y="-45" width="22" height="35" rx="8" fill="#43a047"/>
+    <!-- Head -->
+    <ellipse cx="51" cy="-58" rx="22" ry="18" fill="#fdd835"/>
+    <ellipse cx="51" cy="-58" rx="22" ry="18" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+    <ellipse cx="68" cy="-52" rx="12" ry="9" fill="#ffcc02"/>
+    <circle cx="65" cy="-51" r="2.5" fill="#e65100" opacity="0.6"/>
+    <circle cx="72" cy="-51" r="2.5" fill="#e65100" opacity="0.6"/>
+    <circle cx="48" cy="-62" r="4" fill="#1a0d00"/>
+    <circle cx="49.5" cy="-63" r="1.5" fill="white"/>
+    <!-- Long donkey ears -->
+    <ellipse cx="38" cy="-78" rx="6" ry="16" fill="#fdd835" transform="rotate(-15,38,-78)"/>
+    <ellipse cx="38" cy="-78" rx="3" ry="10" fill="#8e24aa" transform="rotate(-15,38,-78)"/>
+    <ellipse cx="56" cy="-76" rx="5" ry="14" fill="#fdd835" transform="rotate(10,56,-76)"/>
+    <ellipse cx="56" cy="-76" rx="2.5" ry="8" fill="#8e24aa" transform="rotate(10,56,-76)"/>
+    <!-- Legs -->
+    <rect x="-38" y="30" width="14" height="30" rx="5" fill="#e91e96"/>
+    <rect x="-18" y="30" width="14" height="30" rx="5" fill="#00bcd4"/>
+    <rect x="6" y="30" width="14" height="30" rx="5" fill="#fdd835"/>
+    <rect x="26" y="30" width="14" height="30" rx="5" fill="#43a047"/>
+    <!-- Tail -->
+    <path d="M-50,10 Q-72,0 -68,20 Q-64,40 -58,30" stroke="#ff6d00" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="-58" cy="30" r="8" fill="#ff6d00"/>
+    <line x1="-58" y1="30" x2="-62" y2="45" stroke="#ff6d00" stroke-width="4"/>
+    <line x1="-58" y1="30" x2="-52" y2="46" stroke="#ff6d00" stroke-width="4"/>
+    <line x1="-58" y1="30" x2="-58" y2="47" stroke="#ff6d00" stroke-width="4"/>
+    <line x1="0" y1="-38" x2="0" y2="-60" stroke="#8B6914" stroke-width="3"/>
+  </g>
+
+  <!-- Small piñata center-right (pot/olla style - another different shape) -->
+  <line x1="1200" y1="120" x2="1215" y2="295" stroke="#8B6914" stroke-width="2.5"/>
+  <!-- Olla/clay-pot piñata - round bottom, wide middle, narrow neck -->
+  <g transform="translate(1215, 330) scale(0.9)">
+    <!-- Tissue fringe layers -->
+    <rect x="-32" y="30" width="64" height="14" rx="2" fill="#fdd835" opacity="0.9"/>
+    <rect x="-28" y="41" width="56" height="12" rx="2" fill="#e53935" opacity="0.9"/>
+    <rect x="-24" y="51" width="48" height="11" rx="2" fill="#43a047" opacity="0.9"/>
+    <rect x="-20" y="60" width="40" height="10" rx="2" fill="#e91e96" opacity="0.9"/>
+    <!-- Fringe cuts -->
+    <line x1="-20" y1="30" x2="-20" y2="47" stroke="#f9a825" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="30" x2="0" y2="47" stroke="#f9a825" stroke-width="1.5" opacity="0.6"/>
+    <line x1="20" y1="30" x2="20" y2="47" stroke="#f9a825" stroke-width="1.5" opacity="0.6"/>
+    <!-- Olla pot body (wide round) -->
+    <ellipse cx="0" cy="0" rx="38" ry="30" fill="#ff6d00"/>
+    <ellipse cx="0" cy="0" rx="38" ry="30" fill="none" stroke="#e65100" stroke-width="3"/>
+    <!-- Pot shading -->
+    <ellipse cx="-8" cy="-5" rx="22" ry="16" fill="#ff8f00" opacity="0.5"/>
+    <!-- Pot decorative pattern (flowers) -->
+    <circle cx="0" cy="0" r="8" fill="#fdd835"/>
+    <circle cx="0" cy="0" r="4" fill="#e53935"/>
+    <circle cx="16" cy="-12" r="5" fill="#fdd835" opacity="0.7"/>
+    <circle cx="-16" cy="-12" r="5" fill="#fdd835" opacity="0.7"/>
+    <circle cx="16" cy="12" r="5" fill="#43a047" opacity="0.7"/>
+    <circle cx="-16" cy="12" r="5" fill="#43a047" opacity="0.7"/>
+    <!-- Neck of pot -->
+    <rect x="-12" y="-32" width="24" height="18" rx="4" fill="#ff6d00"/>
+    <rect x="-12" y="-32" width="24" height="18" rx="4" fill="none" stroke="#e65100" stroke-width="2"/>
+    <!-- Rim -->
+    <ellipse cx="0" cy="-32" rx="16" ry="5" fill="#e65100"/>
+    <!-- String -->
+    <line x1="0" y1="-37" x2="0" y2="-58" stroke="#8B6914" stroke-width="2.5"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- === GROUND / FLOOR === -->
+  <!-- ============================================================ -->
+  <rect x="0" y="900" width="1920" height="180" fill="#1a0d00" opacity="0.6"/>
+  <!-- cobblestone suggestion -->
+  <ellipse cx="200" cy="930" rx="90" ry="12" fill="#2d1a00" opacity="0.5"/>
+  <ellipse cx="500" cy="940" rx="110" ry="13" fill="#2d1a00" opacity="0.4"/>
+  <ellipse cx="800" cy="928" rx="95" ry="11" fill="#2d1a00" opacity="0.5"/>
+  <ellipse cx="1100" cy="935" rx="105" ry="12" fill="#2d1a00" opacity="0.4"/>
+  <ellipse cx="1400" cy="929" rx="90" ry="11" fill="#2d1a00" opacity="0.5"/>
+  <ellipse cx="1700" cy="938" rx="100" ry="13" fill="#2d1a00" opacity="0.4"/>
+
+  <!-- ============================================================ -->
+  <!-- === LEFT SCENE: FAMILY GROUP === -->
+  <!-- ============================================================ -->
+  <!-- Warm glow behind family -->
+  <ellipse cx="380" cy="780" rx="220" ry="200" fill="#ff8800" opacity="0.08"/>
+
+  <!-- === PERSON 1 (back left, dad, with sombrero) === -->
+  <!-- body -->
+  <rect x="240" y="640" width="55" height="130" rx="10" fill="#e67e22"/>
+  <!-- legs -->
+  <rect x="242" y="760" width="22" height="80" rx="6" fill="#2e4a8c"/>
+  <rect x="265" y="760" width="22" height="80" rx="6" fill="#2e4a8c"/>
+  <!-- shoes -->
+  <ellipse cx="253" cy="840" rx="14" ry="7" fill="#1a0d00"/>
+  <ellipse cx="276" cy="840" rx="14" ry="7" fill="#1a0d00"/>
+  <!-- head -->
+  <circle cx="267" cy="620" r="32" fill="#c68642"/>
+  <!-- sombrero -->
+  <ellipse cx="267" cy="596" rx="52" ry="10" fill="#8B4513"/>
+  <rect x="250" y="572" width="34" height="28" rx="5" fill="#a0522d"/>
+  <!-- eyes -->
+  <circle cx="257" cy="618" r="4" fill="#1a0d00"/>
+  <circle cx="277" cy="618" r="4" fill="#1a0d00"/>
+  <!-- smile -->
+  <path d="M259,630 Q267,638 275,630" stroke="#1a0d00" stroke-width="2" fill="none"/>
+  <!-- mustache -->
+  <path d="M258,624 Q267,629 276,624" stroke="#4a2800" stroke-width="3" fill="none"/>
+  <!-- arm holding candle -->
+  <rect x="295" y="650" width="18" height="80" rx="6" fill="#e67e22" transform="rotate(-15,295,650)"/>
+  <!-- candle -->
+  <rect x="318" y="655" width="10" height="45" rx="3" fill="#fffde7"/>
+  <!-- flame -->
+  <ellipse cx="323" cy="650" rx="6" ry="10" fill="url(#flama)" opacity="0.95"/>
+  <ellipse cx="323" cy="650" rx="3" ry="6" fill="#fffde7"/>
+  <!-- glow around flame -->
+  <ellipse cx="323" cy="655" rx="20" ry="20" fill="#ffdd88" opacity="0.3"/>
+
+  <!-- === PERSON 2 (mom, behind center) === -->
+  <rect x="310" y="660" width="52" height="120" rx="10" fill="#c2185b"/>
+  <!-- legs -->
+  <rect x="312" y="775" width="20" height="75" rx="6" fill="#6a1b9a"/>
+  <rect x="333" y="775" width="20" height="75" rx="6" fill="#6a1b9a"/>
+  <ellipse cx="322" cy="850" rx="13" ry="6" fill="#1a0d00"/>
+  <ellipse cx="343" cy="850" rx="13" ry="6" fill="#1a0d00"/>
+  <!-- head -->
+  <circle cx="336" cy="643" r="29" fill="#c68642"/>
+  <!-- hair -->
+  <ellipse cx="336" cy="628" rx="30" ry="18" fill="#2d1a00"/>
+  <ellipse cx="336" cy="618" rx="20" ry="10" fill="#2d1a00"/>
+  <!-- eyes -->
+  <circle cx="327" cy="643" r="3.5" fill="#1a0d00"/>
+  <circle cx="345" cy="643" r="3.5" fill="#1a0d00"/>
+  <!-- smile -->
+  <path d="M329,653 Q336,660 343,653" stroke="#1a0d00" stroke-width="2" fill="none"/>
+  <!-- arm holding candle -->
+  <rect x="360" y="668" width="16" height="70" rx="5" fill="#c2185b" transform="rotate(-10,360,668)"/>
+  <rect x="375" y="665" width="9" height="40" rx="3" fill="#fffde7"/>
+  <ellipse cx="379" cy="661" rx="5" ry="8" fill="url(#flama)" opacity="0.95"/>
+  <ellipse cx="379" cy="661" rx="2.5" ry="5" fill="#fffde7"/>
+  <ellipse cx="379" cy="664" rx="18" ry="18" fill="#ffdd88" opacity="0.3"/>
+
+  <!-- === PERSON 3 (child, front left, pink jacket) === -->
+  <rect x="195" y="720" width="42" height="100" rx="9" fill="#e91e96"/>
+  <!-- legs -->
+  <rect x="197" y="815" width="17" height="65" rx="5" fill="#1565c0"/>
+  <rect x="215" y="815" width="17" height="65" rx="5" fill="#1565c0"/>
+  <ellipse cx="206" cy="880" rx="11" ry="6" fill="#1a0d00"/>
+  <ellipse cx="224" cy="880" rx="11" ry="6" fill="#1a0d00"/>
+  <!-- head -->
+  <circle cx="216" cy="705" r="26" fill="#c68642"/>
+  <!-- hair -->
+  <ellipse cx="216" cy="691" rx="27" ry="15" fill="#2d1a00"/>
+  <!-- eyes -->
+  <circle cx="208" cy="705" r="3" fill="#1a0d00"/>
+  <circle cx="224" cy="705" r="3" fill="#1a0d00"/>
+  <!-- big smile -->
+  <path d="M208,715 Q216,724 224,715" stroke="#1a0d00" stroke-width="2.5" fill="none"/>
+  <!-- arm holding candle -->
+  <rect x="237" y="728" width="14" height="60" rx="4" fill="#e91e96" transform="rotate(-20,237,728)"/>
+  <rect x="251" y="724" width="8" height="38" rx="2" fill="#fffde7"/>
+  <ellipse cx="255" cy="720" rx="4.5" ry="8" fill="url(#flama)" opacity="0.95"/>
+  <ellipse cx="255" cy="720" rx="2" ry="5" fill="#fffde7"/>
+
+  <!-- === PERSON 4 (blindfolded child, yellow jacket, reaching for piñata) === -->
+  <rect x="410" y="715" width="45" height="105" rx="9" fill="#f9a825"/>
+  <!-- legs -->
+  <rect x="412" y="815" width="18" height="65" rx="5" fill="#1565c0"/>
+  <rect x="431" y="815" width="18" height="65" rx="5" fill="#1565c0"/>
+  <ellipse cx="421" cy="880" rx="12" ry="6" fill="#1a0d00"/>
+  <ellipse cx="440" cy="880" rx="12" ry="6" fill="#1a0d00"/>
+  <!-- head -->
+  <circle cx="432" cy="699" r="27" fill="#c68642"/>
+  <!-- hair (short) -->
+  <ellipse cx="432" cy="683" rx="28" ry="14" fill="#2d1a00"/>
+  <!-- blindfold! -->
+  <rect x="410" y="694" width="44" height="11" rx="4" fill="#ffffff" opacity="0.9"/>
+  <line x1="410" y1="699" x2="454" y2="699" stroke="#cccccc" stroke-width="1"/>
+  <!-- mouth open (excited) -->
+  <ellipse cx="432" cy="715" rx="6" ry="4" fill="#1a0d00"/>
+  <!-- arms extended up reaching -->
+  <line x1="410" y1="730" x2="380" y2="680" stroke="#f9a825" stroke-width="14" stroke-linecap="round"/>
+  <line x1="455" y1="730" x2="490" y2="675" stroke="#f9a825" stroke-width="14" stroke-linecap="round"/>
+  <!-- stick in right hand -->
+  <line x1="490" y1="675" x2="510" y2="630" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ============================================================ -->
+  <!-- === PONCHE POT (clay pot, center-left) === -->
+  <!-- ============================================================ -->
+  <!-- Steam wisps -->
+  <path d="M530,720 Q525,700 532,680 Q539,660 534,640" stroke="#fffde7" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M555,718 Q562,698 556,678 Q549,658 557,638" stroke="#fffde7" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M580,722 Q576,702 583,682 Q590,662 585,642" stroke="#fffde7" stroke-width="3" fill="none" opacity="0.45"/>
+  <!-- Pot body -->
+  <ellipse cx="555" cy="830" rx="90" ry="20" fill="#6b3a0f" opacity="0.8"/>
+  <path d="M465,760 Q465,840 555,860 Q645,840 645,760 Q645,720 555,700 Q465,720 465,760" fill="url(#olla-shade)"/>
+  <!-- Rim of pot -->
+  <ellipse cx="555" cy="755" rx="92" ry="20" fill="#c97a2a"/>
+  <ellipse cx="555" cy="748" rx="80" ry="15" fill="#8B4513"/>
+  <!-- Decorative band on pot -->
+  <path d="M470,780 Q555,795 640,780" stroke="#e67e22" stroke-width="8" fill="none" opacity="0.6"/>
+  <circle cx="490" cy="782" r="4" fill="#fdd835" opacity="0.8"/>
+  <circle cx="525" cy="788" r="4" fill="#e53935" opacity="0.8"/>
+  <circle cx="555" cy="790" r="4" fill="#fdd835" opacity="0.8"/>
+  <circle cx="585" cy="788" r="4" fill="#e53935" opacity="0.8"/>
+  <circle cx="620" cy="782" r="4" fill="#fdd835" opacity="0.8"/>
+  <!-- Ponche liquid inside -->
+  <ellipse cx="555" cy="748" rx="78" ry="13" fill="#b71c1c" opacity="0.9"/>
+  <!-- Fruit pieces in ponche -->
+  <circle cx="535" cy="748" r="6" fill="#e53935"/>
+  <circle cx="555" cy="746" r="5" fill="#ff8f00"/>
+  <circle cx="572" cy="749" r="6" fill="#e53935"/>
+  <rect x="527" y="743" width="10" height="10" rx="2" fill="#ff6d00" opacity="0.8"/>
+  <!-- Handles on pot -->
+  <ellipse cx="466" cy="775" rx="12" ry="8" fill="#8B4513" transform="rotate(-20,466,775)"/>
+  <ellipse cx="644" cy="775" rx="12" ry="8" fill="#8B4513" transform="rotate(20,644,775)"/>
+
+  <!-- ============================================================ -->
+  <!-- === TAMALES & FOOD TABLE (center) === -->
+  <!-- ============================================================ -->
+  <!-- Wooden table/tray -->
+  <rect x="460" y="855" width="260" height="18" rx="5" fill="#8B4513"/>
+  <rect x="470" y="855" width="240" height="8" rx="3" fill="#a0522d"/>
+
+  <!-- Plate of buñuelos (round fried pastry) -->
+  <!-- Plate -->
+  <ellipse cx="510" cy="855" rx="50" ry="12" fill="#f5f5f5"/>
+  <ellipse cx="510" cy="850" rx="44" ry="8" fill="#fffde7"/>
+  <!-- buñuelo 1 -->
+  <ellipse cx="502" cy="849" rx="20" ry="6" fill="#d4890a" transform="rotate(-10,502,849)"/>
+  <ellipse cx="502" cy="849" rx="8" ry="2.5" fill="none" stroke="#8B4513" stroke-width="1.5" opacity="0.5" transform="rotate(-10,502,849)"/>
+  <!-- sugar dusting -->
+  <circle cx="498" cy="847" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="508" cy="849" r="1" fill="white" opacity="0.7"/>
+  <circle cx="503" cy="852" r="1" fill="white" opacity="0.6"/>
+  <!-- buñuelo 2 overlapping -->
+  <ellipse cx="520" cy="851" rx="20" ry="6" fill="#c47a0a" transform="rotate(5,520,851)"/>
+  <ellipse cx="520" cy="851" rx="8" ry="2.5" fill="none" stroke="#8B4513" stroke-width="1.5" opacity="0.5" transform="rotate(5,520,851)"/>
+  <circle cx="516" cy="849" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="526" cy="852" r="1" fill="white" opacity="0.6"/>
+
+  <!-- Tamales stacked -->
+  <!-- Tamale 1 -->
+  <rect x="568" y="833" width="28" height="50" rx="8" fill="#6b8c3e" transform="rotate(-8,568,833)"/>
+  <rect x="571" y="838" width="22" height="40" rx="5" fill="#a0c060" transform="rotate(-8,568,833)"/>
+  <!-- ties -->
+  <line x1="563" y1="843" x2="600" y2="840" stroke="#8B4513" stroke-width="2" opacity="0.7"/>
+  <line x1="563" y1="853" x2="600" y2="850" stroke="#8B4513" stroke-width="2" opacity="0.7"/>
+  <!-- Tamale 2 -->
+  <rect x="592" y="836" width="28" height="50" rx="8" fill="#5a7a2e" transform="rotate(5,592,836)"/>
+  <rect x="595" y="841" width="22" height="40" rx="5" fill="#8bb050" transform="rotate(5,592,836)"/>
+  <line x1="587" y1="846" x2="624" y2="843" stroke="#8B4513" stroke-width="2" opacity="0.7"/>
+  <!-- Tamale 3 (top) -->
+  <rect x="578" y="818" width="28" height="50" rx="8" fill="#6b8c3e" transform="rotate(-2,578,818)"/>
+  <rect x="581" y="823" width="22" height="40" rx="5" fill="#a0c060" transform="rotate(-2,578,818)"/>
+  <line x1="574" y1="830" x2="610" y2="829" stroke="#8B4513" stroke-width="2" opacity="0.7"/>
+
+  <!-- ============================================================ -->
+  <!-- === RIGHT SCENE: HOUSE FACADE + LUMINARIAS === -->
+  <!-- ============================================================ -->
+  <!-- House silhouette right -->
+  <rect x="1350" y="500" width="420" height="430" rx="8" fill="#1a0a00" opacity="0.7"/>
+  <polygon points="1340,502 1560,350 1780,502" fill="#1a0a00" opacity="0.8"/>
+  <!-- Roof tiles suggestion -->
+  <path d="M1360,502 Q1380,488 1400,502 Q1420,488 1440,502 Q1460,488 1480,502 Q1500,488 1520,502 Q1540,488 1560,502 Q1580,488 1600,502 Q1620,488 1640,502 Q1660,488 1680,502 Q1700,488 1720,502 Q1740,488 1760,502 Q1780,488 1800,502" stroke="#c0392b" stroke-width="6" fill="none" opacity="0.6"/>
+  <!-- Windows with warm light -->
+  <rect x="1390" y="560" width="80" height="90" rx="6" fill="#ff8800" opacity="0.7"/>
+  <rect x="1395" y="565" width="70" height="80" rx="4" fill="#ffdd88" opacity="0.6"/>
+  <line x1="1430" y1="565" x2="1430" y2="645" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <line x1="1395" y1="605" x2="1465" y2="605" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <!-- Window glow emanating -->
+  <ellipse cx="1430" cy="605" rx="80" ry="60" fill="#ffdd88" opacity="0.12"/>
+
+  <rect x="1650" y="560" width="80" height="90" rx="6" fill="#ff8800" opacity="0.7"/>
+  <rect x="1655" y="565" width="70" height="80" rx="4" fill="#ffdd88" opacity="0.6"/>
+  <line x1="1690" y1="565" x2="1690" y2="645" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <line x1="1655" y1="605" x2="1725" y2="605" stroke="#8B4513" stroke-width="2" opacity="0.4"/>
+  <ellipse cx="1690" cy="605" rx="80" ry="60" fill="#ffdd88" opacity="0.1"/>
+
+  <!-- Door with arch -->
+  <path d="M1510,930 L1510,680 Q1560,640 1610,680 L1610,930" fill="#3d1a00"/>
+  <path d="M1510,680 Q1560,640 1610,680" stroke="#8B4513" stroke-width="4" fill="none"/>
+  <circle cx="1596" cy="790" r="5" fill="#fdd835"/>
+
+  <!-- Luminarias / Paper bag lanterns along house -->
+  <!-- Luminaria 1 -->
+  <rect x="1360" y="870" width="30" height="40" rx="3" fill="#fffde7" opacity="0.8"/>
+  <ellipse cx="1375" cy="910" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1375" cy="885" r="8" fill="#ffdd88" opacity="0.5"/>
+  <!-- Luminaria 2 -->
+  <rect x="1420" y="865" width="30" height="40" rx="3" fill="#fffde7" opacity="0.75"/>
+  <ellipse cx="1435" cy="905" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1435" cy="880" r="8" fill="#ffdd88" opacity="0.5"/>
+  <!-- Luminaria 3 -->
+  <rect x="1480" y="872" width="30" height="40" rx="3" fill="#fffde7" opacity="0.8"/>
+  <ellipse cx="1495" cy="912" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1495" cy="887" r="8" fill="#ffdd88" opacity="0.5"/>
+  <!-- Luminaria 4 -->
+  <rect x="1630" y="868" width="30" height="40" rx="3" fill="#fffde7" opacity="0.8"/>
+  <ellipse cx="1645" cy="908" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1645" cy="883" r="8" fill="#ffdd88" opacity="0.5"/>
+  <!-- Luminaria 5 -->
+  <rect x="1690" y="872" width="30" height="40" rx="3" fill="#fffde7" opacity="0.75"/>
+  <ellipse cx="1705" cy="912" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1705" cy="887" r="8" fill="#ffdd88" opacity="0.5"/>
+  <!-- Luminaria 6 -->
+  <rect x="1750" y="866" width="30" height="40" rx="3" fill="#fffde7" opacity="0.8"/>
+  <ellipse cx="1765" cy="906" rx="15" ry="4" fill="#d4890a" opacity="0.4"/>
+  <circle cx="1765" cy="881" r="8" fill="#ffdd88" opacity="0.5"/>
+
+  <!-- === FOLIAGE / BOUGAINVILLEA === -->
+  <!-- Left side bougainvillea climbing up -->
+  <path d="M50,900 Q30,750 60,600 Q90,450 40,300" stroke="#2d6a1a" stroke-width="8" fill="none" opacity="0.8"/>
+  <path d="M50,900 Q80,780 50,650 Q20,520 70,400" stroke="#2d6a1a" stroke-width="6" fill="none" opacity="0.6"/>
+  <!-- Pink flowers of bougainvillea -->
+  <circle cx="45" cy="310" r="12" fill="#e91e96" opacity="0.9"/>
+  <circle cx="58" cy="295" r="10" fill="#e91e96" opacity="0.8"/>
+  <circle cx="30" cy="300" r="9" fill="#c2185b" opacity="0.9"/>
+  <circle cx="65" cy="330" r="11" fill="#e91e96" opacity="0.8"/>
+  <circle cx="40" cy="345" r="8" fill="#c2185b" opacity="0.7"/>
+  <circle cx="55" cy="410" r="10" fill="#e91e96" opacity="0.8"/>
+  <circle cx="35" cy="425" r="8" fill="#c2185b" opacity="0.9"/>
+  <circle cx="70" cy="415" r="9" fill="#e91e96" opacity="0.7"/>
+  <circle cx="42" cy="510" r="11" fill="#e91e96" opacity="0.8"/>
+  <circle cx="60" cy="495" r="9" fill="#c2185b" opacity="0.9"/>
+  <circle cx="25" cy="520" r="8" fill="#e91e96" opacity="0.7"/>
+  <circle cx="75" cy="600" r="10" fill="#e91e96" opacity="0.8"/>
+  <circle cx="50" cy="620" r="8" fill="#c2185b" opacity="0.9"/>
+  <circle cx="30" cy="610" r="9" fill="#e91e96" opacity="0.7"/>
+  <!-- Green leaves interspersed -->
+  <ellipse cx="48" cy="350" rx="12" ry="6" fill="#2d8a2a" opacity="0.7" transform="rotate(-30,48,350)"/>
+  <ellipse cx="62" cy="440" rx="10" ry="5" fill="#2d8a2a" opacity="0.7" transform="rotate(20,62,440)"/>
+  <ellipse cx="35" cy="540" rx="11" ry="5" fill="#2d8a2a" opacity="0.6" transform="rotate(-15,35,540)"/>
+
+  <!-- Right side bougainvillea -->
+  <path d="M1870,900 Q1890,750 1860,600 Q1830,450 1880,300" stroke="#2d6a1a" stroke-width="8" fill="none" opacity="0.8"/>
+  <circle cx="1865" cy="305" r="12" fill="#e91e96" opacity="0.9"/>
+  <circle cx="1878" cy="290" r="10" fill="#c2185b" opacity="0.8"/>
+  <circle cx="1850" cy="315" r="9" fill="#e91e96" opacity="0.9"/>
+  <circle cx="1872" cy="405" r="11" fill="#e91e96" opacity="0.8"/>
+  <circle cx="1855" cy="420" r="9" fill="#c2185b" opacity="0.9"/>
+  <circle cx="1885" cy="410" r="8" fill="#e91e96" opacity="0.7"/>
+  <circle cx="1860" cy="510" r="10" fill="#e91e96" opacity="0.8"/>
+  <circle cx="1875" cy="495" r="8" fill="#c2185b" opacity="0.9"/>
+  <circle cx="1845" cy="520" r="9" fill="#e91e96" opacity="0.7"/>
+  <circle cx="1868" cy="610" r="11" fill="#e91e96" opacity="0.8"/>
+  <circle cx="1850" cy="625" r="8" fill="#c2185b" opacity="0.9"/>
+  <ellipse cx="1875" cy="345" rx="12" ry="6" fill="#2d8a2a" opacity="0.7" transform="rotate(30,1875,345)"/>
+  <ellipse cx="1858" cy="455" rx="10" ry="5" fill="#2d8a2a" opacity="0.7" transform="rotate(-20,1858,455)"/>
+
+  <!-- ============================================================ -->
+  <!-- === DECORATIVE CAÑAS DE AZUCAR (sugar cane) === -->
+  <!-- ============================================================ -->
+  <line x1="750" y1="900" x2="755" y2="650" stroke="#43a047" stroke-width="8" stroke-linecap="round"/>
+  <line x1="762" y1="900" x2="768" y2="640" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+  <line x1="740" y1="900" x2="743" y2="660" stroke="#66bb6a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Cane segments -->
+  <line x1="750" y1="720" x2="762" y2="720" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="750" y1="760" x2="762" y2="760" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="750" y1="800" x2="762" y2="800" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="750" y1="840" x2="762" y2="840" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="750" y1="880" x2="762" y2="880" stroke="#1b5e20" stroke-width="3"/>
+  <!-- Cane leaves -->
+  <path d="M753,680 Q770,660 790,668" stroke="#43a047" stroke-width="5" fill="none"/>
+  <path d="M756,700 Q736,682 716,690" stroke="#43a047" stroke-width="4" fill="none"/>
+
+  <!-- Right cane bundle -->
+  <line x1="1150" y1="900" x2="1155" y2="650" stroke="#43a047" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1162" y1="900" x2="1168" y2="640" stroke="#2e7d32" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1140" y1="900" x2="1143" y2="660" stroke="#66bb6a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="1150" y1="720" x2="1162" y2="720" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="1150" y1="760" x2="1162" y2="760" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="1150" y1="800" x2="1162" y2="800" stroke="#1b5e20" stroke-width="3"/>
+  <line x1="1150" y1="840" x2="1162" y2="840" stroke="#1b5e20" stroke-width="3"/>
+  <path d="M1153,680 Q1170,660 1190,668" stroke="#43a047" stroke-width="5" fill="none"/>
+  <path d="M1156,700 Q1136,682 1116,690" stroke="#43a047" stroke-width="4" fill="none"/>
+
+  <!-- ============================================================ -->
+  <!-- === FOREGROUND DECORATIONS === -->
+  <!-- ============================================================ -->
+  <!-- Scattered confetti -->
+  <g opacity="0.7">
+    <rect x="850" y="750" width="8" height="5" rx="1" fill="#fdd835" transform="rotate(30,850,750)"/>
+    <rect x="890" y="790" width="6" height="4" rx="1" fill="#e91e96" transform="rotate(-20,890,790)"/>
+    <rect x="930" y="770" width="7" height="4" rx="1" fill="#43a047" transform="rotate(45,930,770)"/>
+    <rect x="970" y="800" width="8" height="5" rx="1" fill="#ff6d00" transform="rotate(-35,970,800)"/>
+    <rect x="1010" y="760" width="6" height="4" rx="1" fill="#00bcd4" transform="rotate(15,1010,760)"/>
+    <rect x="1050" y="800" width="7" height="4" rx="1" fill="#fdd835" transform="rotate(-50,1050,800)"/>
+    <rect x="1080" y="755" width="8" height="5" rx="1" fill="#e53935" transform="rotate(25,1080,755)"/>
+    <rect x="830" y="820" width="6" height="4" rx="1" fill="#8e24aa" transform="rotate(-10,830,820)"/>
+    <!-- Circular confetti dots -->
+    <circle cx="870" cy="830" r="4" fill="#fdd835"/>
+    <circle cx="920" cy="810" r="3" fill="#e91e96"/>
+    <circle cx="960" cy="840" r="4" fill="#43a047"/>
+    <circle cx="1020" cy="825" r="3" fill="#ff6d00"/>
+    <circle cx="1060" cy="820" r="4" fill="#00bcd4"/>
+  </g>
+
+  <!-- Mexican star pattern decorations (scattered across sky) -->
+  <!-- Mini stars / sparkles -->
+  <g fill="#fdd835" opacity="0.6">
+    <polygon points="800,200 803,210 813,210 805,217 808,227 800,221 792,227 795,217 787,210 797,210" transform="scale(0.5) translate(800,100)"/>
+    <polygon points="1600,180 1603,190 1613,190 1605,197 1608,207 1600,201 1592,207 1595,197 1587,190 1597,190" transform="scale(0.6) translate(1000,80)"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- === VIGNETTE OVERLAY (subtle dark edges to focus center) === -->
+  <!-- ============================================================ -->
+  <radialGradient id="vignette" cx="50%" cy="55%" r="70%">
+    <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:0.45"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- ============================================================ -->
+  <!-- === THIN BOTTOM GRASS LINE === -->
+  <!-- ============================================================ -->
+  <path d="M0,900 Q40,880 80,900 Q120,920 160,900 Q200,880 240,900 Q280,920 320,900 Q360,880 400,900 Q440,920 480,900 Q520,880 560,900 Q600,920 640,900 Q680,880 720,900 Q760,920 800,900 Q840,880 880,900 Q920,920 960,900 Q1000,880 1040,900 Q1080,920 1120,900 Q1160,880 1200,900 Q1240,920 1280,900 Q1320,880 1360,900 Q1400,920 1440,900 Q1480,880 1520,900 Q1560,920 1600,900 Q1640,880 1680,900 Q1720,920 1760,900 Q1800,880 1840,900 Q1880,920 1920,900" stroke="#2d8a2a" stroke-width="6" fill="none" opacity="0.4"/>
+
+</svg>
