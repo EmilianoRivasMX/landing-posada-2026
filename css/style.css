@@ -1,12 +1,13 @@
 body {
     background-color: #0d0820;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+        radial-gradient(ellipse 62% 62% at center, transparent 45%, #0d0820 78%),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../img/fondo-posada-plano.jpg');
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover, cover, 68%;
+    background-position: center, center, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
     font-family: 'Courier Prime', monospace;
     min-height: 100vh;
 }
