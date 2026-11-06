@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="valienteBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="60%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="8" y="8" width="184" height="224" rx="8" fill="url(#valienteBg)" stroke="#0f172a" stroke-width="4"/>
+
+  <!-- Sun rays / retro background accents -->
+  <path d="M 100 85 L 30 18" stroke="#fef08a" stroke-width="3" opacity="0.4" stroke-dasharray="4 6"/>
+  <path d="M 100 85 L 170 18" stroke="#fef08a" stroke-width="3" opacity="0.4" stroke-dasharray="4 6"/>
+  <path d="M 100 85 L 12 60" stroke="#fef08a" stroke-width="3" opacity="0.4" stroke-dasharray="4 6"/>
+  <path d="M 100 85 L 188 60" stroke="#fef08a" stroke-width="3" opacity="0.4" stroke-dasharray="4 6"/>
+
+  <!-- Ground / Piso -->
+  <path d="M 12 178 Q 100 172 188 178 L 188 228 L 12 228 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="3"/>
+  <ellipse cx="100" cy="182" rx="65" ry="14" fill="#fdba74" opacity="0.6"/>
+
+  <!-- Traditional Sombrero on the ground at his feet -->
+  <g id="sombrero-piso">
+    <ellipse cx="100" cy="192" rx="34" ry="11" fill="#facc15" stroke="#0f172a" stroke-width="3"/>
+    <ellipse cx="100" cy="190" rx="14" ry="6" fill="#ca8a04" stroke="#0f172a" stroke-width="2.5"/>
+    <ellipse cx="100" cy="190" rx="8" ry="3.5" fill="#78350f"/>
+    <path d="M 72 191 Q 100 197 128 191" stroke="#dc2626" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- El Valiente Character -->
+  <g id="personaje-valiente">
+    <!-- Legs in dark striped trousers, strong defiant stance -->
+    <!-- Left Leg (viewer's left) -->
+    <path d="M 85 130 L 70 180 L 60 180 L 76 128 Z" fill="#0f172a" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="72" y1="135" x2="65" y2="178" stroke="#334155" stroke-width="1.5"/>
+    <!-- Left Boot -->
+    <polygon points="56,180 72,180 75,186 52,186" fill="#78350f" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Right Leg (viewer's right) -->
+    <path d="M 115 130 L 130 180 L 140 180 L 124 128 Z" fill="#0f172a" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="128" y1="135" x2="135" y2="178" stroke="#334155" stroke-width="1.5"/>
+    <!-- Right Boot -->
+    <polygon points="128,180 144,180 148,186 125,186" fill="#78350f" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Red Sash / Faja Roja -->
+    <polygon points="80,118 120,118 122,128 78,128" fill="#dc2626" stroke="#0f172a" stroke-width="3"/>
+    <path d="M 115 125 L 124 142 L 118 143 L 112 127" fill="#b91c1c" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Torso: Striped Pink/White Mexican Shirt (Camisa rayada tradicional) -->
+    <path d="M 78 82 L 80 120 L 120 120 L 122 82 Q 100 76 78 82 Z" fill="#f43f5e" stroke="#0f172a" stroke-width="3"/>
+    <!-- Shirt stripes -->
+    <line x1="86" y1="83" x2="87" y2="119" stroke="#ffffff" stroke-width="2.5"/>
+    <line x1="94" y1="82" x2="94" y2="119" stroke="#ffffff" stroke-width="2.5"/>
+    <line x1="106" y1="82" x2="106" y2="119" stroke="#ffffff" stroke-width="2.5"/>
+    <line x1="114" y1="83" x2="113" y2="119" stroke="#ffffff" stroke-width="2.5"/>
+    <!-- Open chest collar -->
+    <polygon points="95,80 105,80 100,94" fill="#fbcfe8" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Left Arm holding the Machete / Puñal -->
+    <path d="M 80 84 L 56 102 L 64 116 L 82 98" fill="#f43f5e" stroke="#0f172a" stroke-width="2.5"/>
+    <ellipse cx="56" cy="110" rx="6" ry="6" fill="#fbcfe8" stroke="#0f172a" stroke-width="2.5"/>
+    <!-- The Puñal / Knife -->
+    <path d="M 54 112 L 40 125" stroke="#78350f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 38 126 Q 22 135 18 122 Q 28 118 40 122 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+    <line x1="38" y1="124" x2="24" y2="124" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- Right Arm holding the folded Serape -->
+    <path d="M 120 84 L 140 104 L 132 116 L 118 94" fill="#f43f5e" stroke="#0f172a" stroke-width="2.5"/>
+    <ellipse cx="140" cy="110" rx="6" ry="6" fill="#fbcfe8" stroke="#0f172a" stroke-width="2.5"/>
+    <!-- Serape draped over arm -->
+    <g id="serape-brazo">
+      <path d="M 136 102 C 146 100 156 108 152 145 L 138 145 C 138 120 134 110 136 102 Z" fill="#10b981" stroke="#0f172a" stroke-width="3"/>
+      <!-- Serape stripes -->
+      <path d="M 137 114 L 151 114" stroke="#facc15" stroke-width="3"/>
+      <path d="M 137 122 L 151 122" stroke="#dc2626" stroke-width="3"/>
+      <path d="M 137 130 L 151 130" stroke="#06b6d4" stroke-width="3"/>
+      <line x1="140" y1="145" x2="140" y2="152" stroke="#fef08a" stroke-width="2"/>
+      <line x1="145" y1="145" x2="145" y2="152" stroke="#fef08a" stroke-width="2"/>
+      <line x1="150" y1="145" x2="150" y2="152" stroke="#fef08a" stroke-width="2"/>
+    </g>
+
+    <!-- Head & Neck -->
+    <rect x="95" y="74" width="10" height="10" fill="#fbcfe8" stroke="#0f172a" stroke-width="2"/>
+    <ellipse cx="100" cy="65" rx="13" ry="15" fill="#fbcfe8" stroke="#0f172a" stroke-width="3"/>
+    
+    <!-- Hair (classic parted dark hair) -->
+    <path d="M 88 64 C 88 50 112 50 112 64 C 107 55 93 55 88 64 Z" fill="#0f172a"/>
+    <path d="M 96 52 C 98 46 104 48 106 52" stroke="#0f172a" stroke-width="2" fill="none"/>
+
+    <!-- Eyes (determined, brave look) -->
+    <circle cx="95" cy="63" r="2" fill="#0f172a"/>
+    <circle cx="105" cy="63" r="2" fill="#0f172a"/>
+    <line x1="92" y1="59" x2="98" y2="61" stroke="#0f172a" stroke-width="2"/>
+    <line x1="108" y1="59" x2="102" y2="61" stroke="#0f172a" stroke-width="2"/>
+    
+    <!-- Mustache & Mouth -->
+    <path d="M 94 70 Q 100 73 106 70" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <ellipse cx="92" cy="67" rx="2" ry="1.5" fill="#f43f5e" opacity="0.6"/>
+    <ellipse cx="108" cy="67" rx="2" ry="1.5" fill="#f43f5e" opacity="0.6"/>
+  </g>
+
+  <!-- Footer Banner -->
+  <path d="M 14 212 L 186 212 L 186 226 L 14 226 Z" fill="#0f172a"/>
+  <text x="100" y="223" text-anchor="middle" font-family="'Courier Prime', monospace, sans-serif" font-weight="900" font-size="11" fill="#fde047" letter-spacing="2">SOLO PERO VALIENTE</text>
+</svg>

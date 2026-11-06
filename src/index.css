@@ -1,0 +1,23 @@
+body {
+  background-color: #db2777;
+  background-image: radial-gradient(#be185d 2px, transparent 2px);
+  background-size: 30px 30px;
+  font-family: 'Courier Prime', monospace;
+}
+
+.font-rotulo {
+  font-family: 'Rye', serif;
+}
+
+.sombra-dura {
+  box-shadow: 8px 8px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.sombra-dura-sm {
+  box-shadow: 4px 4px 0px 0px rgba(15, 23, 42, 1);
+}
+
+.sombra-dura:active, .sombra-dura-sm:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px rgba(15, 23, 42, 1);
+}
