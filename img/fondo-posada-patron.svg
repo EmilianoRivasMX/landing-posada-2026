@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <!-- Dark festive posada night gradient -->
+    <radialGradient id="patronBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#4a044e"/>
+      <stop offset="50%" stop-color="#2e0854"/>
+      <stop offset="100%" stop-color="#150529"/>
+    </radialGradient>
+
+    <!-- Star Piñata Definition -->
+    <g id="pinata-estrella">
+      <!-- Streamers on cones -->
+      <!-- Top -->
+      <path d="M 0 -70 Q -15 -95 -5 -115 Q 10 -95 0 -70" fill="#ec4899" stroke="#0f172a" stroke-width="2"/>
+      <path d="M 5 -70 Q 20 -95 10 -115" stroke="#facc15" stroke-width="2.5" fill="none"/>
+      <!-- Bottom Left -->
+      <path d="M -50 45 Q -75 75 -90 95 Q -60 75 -50 45" fill="#06b6d4" stroke="#0f172a" stroke-width="2"/>
+      <!-- Bottom Right -->
+      <path d="M 50 45 Q 75 75 90 95 Q 60 75 50 45" fill="#22c55e" stroke="#0f172a" stroke-width="2"/>
+      <!-- Left -->
+      <path d="M -68 -15 Q -100 -25 -115 -10 Q -95 5 -68 -15" fill="#f97316" stroke="#0f172a" stroke-width="2"/>
+      <!-- Right -->
+      <path d="M 68 -15 Q 100 -25 115 -10 Q 95 5 68 -15" fill="#eab308" stroke="#0f172a" stroke-width="2"/>
+
+      <!-- 7 Cones (Picos) -->
+      <!-- Top Cone -->
+      <polygon points="0,-72 -18,-25 18,-25" fill="#facc15" stroke="#0f172a" stroke-width="3"/>
+      <!-- Top Right Cone -->
+      <polygon points="58,-40 20,-12 38,18" fill="#ec4899" stroke="#0f172a" stroke-width="3"/>
+      <!-- Bottom Right Cone -->
+      <polygon points="46,55 25,18 -5,35" fill="#06b6d4" stroke="#0f172a" stroke-width="3"/>
+      <!-- Bottom Cone -->
+      <polygon points="0,75 -22,28 22,28" fill="#f97316" stroke="#0f172a" stroke-width="3"/>
+      <!-- Bottom Left Cone -->
+      <polygon points="-46,55 5,35 -25,18" fill="#a855f7" stroke="#0f172a" stroke-width="3"/>
+      <!-- Top Left Cone -->
+      <polygon points="-58,-40 -38,18 -20,-12" fill="#22c55e" stroke="#0f172a" stroke-width="3"/>
+
+      <!-- Center Ball (Olla con papel crepé) -->
+      <circle cx="0" cy="0" r="32" fill="#ef4444" stroke="#0f172a" stroke-width="3.5"/>
+      <circle cx="0" cy="0" r="24" fill="#fbbf24" stroke="#0f172a" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="14" fill="#38bdf8" stroke="#0f172a" stroke-width="2"/>
+      <circle cx="0" cy="0" r="6" fill="#ec4899"/>
+    </g>
+
+    <!-- Mexican Wrapped Candy (Dulce de Colación) -->
+    <g id="dulce-mexicano">
+      <!-- Candy wrappers -->
+      <polygon points="-35,-12 -20,0 -35,12 -38,0" fill="#f43f5e" stroke="#0f172a" stroke-width="2.5"/>
+      <polygon points="35,-12 20,0 35,12 38,0" fill="#f43f5e" stroke="#0f172a" stroke-width="2.5"/>
+      <!-- Candy center -->
+      <ellipse cx="0" cy="0" rx="20" ry="14" fill="#fef08a" stroke="#0f172a" stroke-width="3"/>
+      <path d="M -8 -13 Q 0 0 -8 13" stroke="#f43f5e" stroke-width="3" fill="none"/>
+      <path d="M 8 -13 Q 16 0 8 13" stroke="#10b981" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- Posada Candle (Velita de posada) -->
+    <g id="velita-posada">
+      <!-- Glow -->
+      <circle cx="0" cy="-28" r="14" fill="#fef08a" opacity="0.3"/>
+      <!-- Flame -->
+      <path d="M 0 -40 Q 9 -28 0 -20 Q -9 -28 0 -40" fill="#f59e0b" stroke="#0f172a" stroke-width="2"/>
+      <path d="M 0 -36 Q 4 -28 0 -23 Q -4 -28 0 -36" fill="#fef08a"/>
+      <!-- Wick -->
+      <line x1="0" y1="-20" x2="0" y2="-14" stroke="#0f172a" stroke-width="2.5"/>
+      <!-- Candle body -->
+      <rect x="-6" y="-14" width="12" height="34" rx="2" fill="#ec4899" stroke="#0f172a" stroke-width="2.5"/>
+      <!-- Dripping wax -->
+      <path d="M -6 -10 Q -3 -6 0 -10 Q 3 -4 6 -10" stroke="#fbcfe8" stroke-width="2" fill="none"/>
+      <line x1="-3" y1="-10" x2="-3" y2="15" stroke="#be185d" stroke-width="1.5"/>
+    </g>
+
+    <!-- Mandarina / Tejocote de posada -->
+    <g id="mandarina">
+      <circle cx="0" cy="0" r="16" fill="#f97316" stroke="#0f172a" stroke-width="2.5"/>
+      <ellipse cx="-4" cy="-5" rx="3" ry="1.5" fill="#ffedd5" opacity="0.6"/>
+      <!-- Leaf -->
+      <path d="M 0 -16 Q 8 -24 14 -18 Q 6 -14 0 -16" fill="#22c55e" stroke="#0f172a" stroke-width="2"/>
+      <circle cx="0" cy="-15" r="1.5" fill="#78350f"/>
+    </g>
+
+    <!-- Festive Sparkle / Star -->
+    <g id="brillo">
+      <path d="M 0 -12 L 3 -3 L 12 0 L 3 3 L 0 12 L -3 3 L -12 0 L -3 -3 Z" fill="#facc15" stroke="#0f172a" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Deep festive background -->
+  <rect width="600" height="600" fill="url(#patronBg)"/>
+
+  <!-- Guirnalda de Papel Picado en curva -->
+  <g id="tira-papel-picado" opacity="0.85">
+    <path d="M -20 80 Q 150 130 300 80 T 620 80" fill="none" stroke="#facc15" stroke-width="3" stroke-dasharray="3 5"/>
+    <!-- Bandera 1 Cyan -->
+    <polygon points="50,95 85,99 78,140 68,130 57,140" fill="#06b6d4" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="68" cy="115" r="4" fill="#ffffff"/>
+    <!-- Bandera 2 Rosa -->
+    <polygon points="120,105 155,107 148,150 138,140 127,150" fill="#ec4899" stroke="#0f172a" stroke-width="2.5"/>
+    <rect x="133" y="120" width="8" height="8" transform="rotate(45 137 124)" fill="#ffffff"/>
+    <!-- Bandera 3 Verde -->
+    <polygon points="190,106 225,102 218,146 208,136 197,146" fill="#10b981" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="208" cy="122" r="4" fill="#ffffff"/>
+    <!-- Bandera 4 Naranja -->
+    <polygon points="260,95 295,89 288,135 278,125 267,135" fill="#f97316" stroke="#0f172a" stroke-width="2.5"/>
+    <rect x="274" y="108" width="7" height="7" fill="#ffffff"/>
+    <!-- Bandera 5 Morado -->
+    <polygon points="340,85 375,89 368,130 358,120 347,130" fill="#a855f7" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="358" cy="105" r="4" fill="#ffffff"/>
+    <!-- Bandera 6 Amarillo -->
+    <polygon points="410,95 445,99 438,140 428,130 417,140" fill="#eab308" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="428" cy="115" r="4" fill="#ffffff"/>
+    <!-- Bandera 7 Rojo -->
+    <polygon points="480,105 515,106 508,148 498,138 487,148" fill="#ef4444" stroke="#0f172a" stroke-width="2.5"/>
+    <rect x="494" y="122" width="7" height="7" transform="rotate(45 497 125)" fill="#ffffff"/>
+  </g>
+
+  <!-- Big Illustrated Piñata Top Left -->
+  <use href="#pinata-estrella" x="110" y="240" transform="scale(0.85) rotate(-15 110 240)"/>
+
+  <!-- Big Illustrated Piñata Bottom Right -->
+  <use href="#pinata-estrella" x="500" y="460" transform="scale(0.9) rotate(20 500 460)"/>
+
+  <!-- Medium Piñata Top Right -->
+  <use href="#pinata-estrella" x="510" y="190" transform="scale(0.65) rotate(12 510 190)"/>
+
+  <!-- Medium Piñata Bottom Left -->
+  <use href="#pinata-estrella" x="100" y="490" transform="scale(0.68) rotate(-8 100 490)"/>
+
+  <!-- Posada Candles (Velitas) -->
+  <use href="#velita-posada" x="220" y="220" transform="rotate(-10 220 220)"/>
+  <use href="#velita-posada" x="380" y="250" transform="rotate(12 380 250)"/>
+  <use href="#velita-posada" x="260" y="470" transform="rotate(8 260 470)"/>
+  <use href="#velita-posada" x="360" y="520" transform="rotate(-6 360 520)"/>
+  <use href="#velita-posada" x="50" y="370" transform="rotate(15 50 370)"/>
+  <use href="#velita-posada" x="550" y="340" transform="rotate(-12 550 340)"/>
+
+  <!-- Wrapped Candies (Dulces de Colación) -->
+  <use href="#dulce-mexicano" x="310" y="180" transform="scale(0.9) rotate(25 310 180)"/>
+  <use href="#dulce-mexicano" x="190" y="360" transform="scale(0.85) rotate(-35 190 360)"/>
+  <use href="#dulce-mexicano" x="430" y="370" transform="scale(0.95) rotate(15 430 370)"/>
+  <use href="#dulce-mexicano" x="300" y="390" transform="scale(0.8) rotate(-10 300 390)"/>
+  <use href="#dulce-mexicano" x="160" y="540" transform="scale(0.85) rotate(40 160 540)"/>
+
+  <!-- Fruta de Posada (Mandarinas y Tejocotes) -->
+  <use href="#mandarina" x="240" y="290"/>
+  <use href="#mandarina" x="360" y="310" transform="scale(0.85)"/>
+  <use href="#mandarina" x="220" y="420" transform="scale(0.9)"/>
+  <use href="#mandarina" x="450" y="270" transform="scale(1.1)"/>
+  <use href="#mandarina" x="70" y="160" transform="scale(0.8)"/>
+  <use href="#mandarina" x="540" y="520" transform="scale(0.95)"/>
+
+  <!-- Confetti & Sparkles everywhere -->
+  <use href="#brillo" x="180" y="160"/>
+  <use href="#brillo" x="300" y="240" transform="scale(1.2)"/>
+  <use href="#brillo" x="420" y="190"/>
+  <use href="#brillo" x="130" y="390" transform="scale(0.8)"/>
+  <use href="#brillo" x="270" y="340" transform="scale(1.4)"/>
+  <use href="#brillo" x="480" y="330"/>
+  <use href="#brillo" x="390" y="440" transform="scale(1.1)"/>
+  <use href="#brillo" x="70" y="280"/>
+  <use href="#brillo" x="520" y="80" transform="scale(1.3)"/>
+  <use href="#brillo" x="40" y="60"/>
+
+  <!-- Streamers / Serpentinas -->
+  <path d="M 140 160 Q 155 190 145 220 T 150 260" stroke="#f43f5e" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 450 180 Q 435 220 445 250 T 440 300" stroke="#06b6d4" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 280 440 Q 295 470 285 500 T 290 540" stroke="#eab308" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 50 420 Q 65 450 55 480" stroke="#10b981" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

@@ -12,12 +12,12 @@ export default function LoteriaCard({
 }) {
   return (
     <div className={`${bgClase} p-2 md:p-3 border-4 border-slate-900 sombra-dura transition-all group hover:-translate-y-1 flex flex-col justify-between`}>
-      <div className="w-full">
-        <div className="border-4 border-slate-900 bg-white p-2 h-28 md:h-32 flex flex-col items-center justify-center relative">
+      <div className="w-full flex-grow flex flex-col mb-2">
+        <div className="border-4 border-slate-900 bg-white p-1.5 sm:p-2 flex-grow flex flex-col items-center justify-center relative min-h-[6.5rem] sm:min-h-[7.5rem] md:min-h-[8.5rem]">
           <span className="absolute top-1 left-1 text-sm font-bold text-slate-900">{numero}</span>
-          <img src={imagen} alt={titulo} className="h-20 md:h-24 object-contain group-hover:scale-105 transition-transform" />
+          <img src={imagen} alt={titulo} className="h-20 sm:h-24 md:h-28 object-contain group-hover:scale-105 transition-transform" />
         </div>
-        <div className="bg-white border-x-4 border-b-4 border-slate-900 -mt-1 pt-1 pb-1 mb-2">
+        <div className="bg-white border-x-4 border-b-4 border-slate-900 -mt-1 pt-1.5 pb-2">
           <p className="text-center font-rotulo text-slate-900 uppercase text-sm md:text-base">{titulo}</p>
           <p className="text-center text-[10px] font-bold text-slate-600 leading-tight">{subtitulo}</p>
         </div>
