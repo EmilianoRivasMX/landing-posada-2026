@@ -1,8 +1,10 @@
 body {
-    background-color: #1a102f;
-    background-image: url('../img/fondo-posada-plano.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #0d0820;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+        url('../img/fondo-posada-plano.jpg');
+    background-size: contain;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Courier Prime', monospace;
