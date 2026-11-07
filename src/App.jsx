@@ -162,7 +162,7 @@ export default function App() {
               onClick={() => setSubmitted(false)}
               className="text-xs font-bold text-slate-600 hover:text-slate-900 underline mt-4 cursor-pointer"
             >
-              Cambiar mi respuesta
+              Registrar otra respuesta
             </button>
           </div>
         )}
