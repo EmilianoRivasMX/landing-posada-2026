@@ -2,7 +2,7 @@ body {
   background-color: #2e0854;
   background-image: 
     radial-gradient(circle at 50% 30%, rgba(219, 39, 119, 0.2), rgba(21, 5, 41, 0.7)),
-    url('../img/fondo-posada-patron.svg');
+    url('/img/fondo-posada.jpg');
   background-size: 550px 550px;
   background-repeat: repeat;
   background-attachment: fixed;

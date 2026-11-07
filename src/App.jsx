@@ -98,7 +98,7 @@ export default function App() {
                 numero={1}
                 titulo="El Valiente"
                 subtitulo="(Sí confirmo, voy solo)"
-                imagen="img/el-valiente.svg"
+                imagen="/img/el-valiente.svg"
                 bgClase="bg-cyan-400"
                 textoBoton="Confirmar Solo"
                 onClick={() => enviarRespuesta('Sí, voy solo(a)', 1)}
@@ -109,7 +109,7 @@ export default function App() {
                 numero={2}
                 titulo="La Bola"
                 subtitulo="(Voy acompañado)"
-                imagen="img/la-bola.svg"
+                imagen="/img/la-bola.svg"
                 bgClase="bg-pink-500"
               >
                 <select
@@ -139,7 +139,7 @@ export default function App() {
               >
                 <div className="border-4 border-slate-900 bg-white p-2 h-18 sm:h-20 md:h-24 flex flex-row items-center justify-center relative gap-3 sm:gap-4">
                   <span className="absolute top-1 left-1 text-xs sm:text-sm font-bold text-slate-900">3</span>
-                  <img src="img/el-ausente.svg" alt="El Ausente" className="h-14 sm:h-16 md:h-20 object-contain group-hover:scale-105 transition-transform" />
+                  <img src="/img/el-ausente.svg" alt="El Ausente" className="h-14 sm:h-16 md:h-20 object-contain group-hover:scale-105 transition-transform" />
                   <div className="text-center">
                     <p className="font-rotulo text-slate-900 uppercase text-sm sm:text-base md:text-lg leading-tight">El Ausente</p>
                     <p className="text-[11px] sm:text-xs font-bold text-slate-600">(Me es imposible ir)</p>
