@@ -119,8 +119,6 @@ export default function App() {
                 >
                   <option value="2">+1 (Somos 2)</option>
                   <option value="3">+2 (Somos 3)</option>
-                  <option value="4">+3 (Somos 4)</option>
-                  <option value="5">+4 o más</option>
                 </select>
                 <button
                   type="button"
